@@ -146,3 +146,64 @@ i {
 #backToTop:hover {
   background: #0056b3;
 }
+
+
+
+.login-container,
+.form-container {
+  max-width: 544px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--padding);
+  background-color: var(--light);
+  color: var(--primary);
+}
+
+.login-container {
+  max-width: 300px;
+}
+
+form div {
+  margin: 3px 2rem;
+}
+
+input,
+textarea {
+  border: solid;
+  border-radius: 5px;
+  display: block;
+  font-size: 1rem;
+  padding: var(--padding);
+  width: 100%;
+  cursor: text;
+
+  &:hover {
+    transform: scale(1.01);
+    will-change: transform;
+  }
+}
+
+input:required {
+  border-left: 0.3em solid var(--contrast);
+  border-right: 0.3em solid var(--contrast);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--button);
+  outline: none;
+  box-shadow: 0 0 5px var(--contrast);
+}
+
+.form-error {
+  display: none;
+  color: var(--alert);
+  font-size: 0.8rem;
+  margin-top: 3px;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.val_error {
+  color: var(--alert);
+}
