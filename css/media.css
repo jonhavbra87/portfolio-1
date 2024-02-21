@@ -1,0 +1,19 @@
+/* --------------------------- MEDIA QUERIES---------------------------  */
+
+@media (min-width: 700px) {
+  :root {
+    --font-size-p: 1.125rem;
+    --font-size-h1: 2.25rem;
+    --font-size-h2: 1.9rem;
+    --font-size-h3: 1.75rem;
+  }
+}
+
+@media (max-width: 700px) {
+  :root {
+    --font-size-p: 0.875rem;
+    --font-size-h1: 1.7rem;
+    --font-size-h2: 1.4rem;
+    --font-size-h3: 1.2rem;
+  }
+}
