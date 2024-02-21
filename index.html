@@ -5,85 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio 1</title>
     <link rel="stylesheet" href="css/index.css" />
+    <script src="/js/index.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/fe3b43ee88.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="flex-column justified-center align-items-center">
-    <header>header</header>
-    <main>
-      <div class="flip-card">
-        <div
-          class="flip-card__front-side flex justified-evenly align-items-center"
-        >
-          <h1 class="uppercase">project exam 1</h1>
-        </div>
+  <body>
+    <header class="header">
+      <nav class="flex">
+        <a href="#one">one</a>
+        <a href="#two">two</a>
+        <a href="#three">three</a>
+        <a href="#four">about me</a>
+      </nav>
+    </header>
+    <main class="flex-column justified-center align-items-center">
+      <section class="card" id="one">
+        <!-- <img src="img/background1.jpg" alt="img of random" class="card-img" /> -->
+        <div class="flip-card">
+          <div
+            class="flip-card__front-side flex justified-evenly align-items-center"
+          >
+            <h1 class="uppercase">project exam 1</h1>
+          </div>
 
-        <div
-          class="flip-card__back-side flex justified-center align-items-center"
-        >
-          <article class="card-wrapper flex">
-            <feature>
-              <img src="/img/pe1.jpg" alt="project exam 1" class="card-img" />
-            </feature>
-            <section class="card-text-container flex-column justified-center">
-              <h2>Project Exam 1</h2>
-              <p>GitHUB</p>
-              <p>Website</p>
-            </section>
-          </article>
+          <div
+            class="flip-card__back-side flex justified-center align-items-center"
+          >
+            <article class="flip-card-wrapper flex">
+              <feature>
+                <img
+                  src="/img/pe1.jpg"
+                  alt="project exam 1"
+                  class="flip-card-img"
+                />
+              </feature>
+              <div
+                class="flip-card-text-container flex-column justified-center"
+              >
+                <h2 class="capitalize">project exam 1</h2>
+                <p>GitHUB</p>
+                <p>Website</p>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-      <div class="flip-card">
-        <div
-          class="flip-card__front-side flex justified-evenly align-items-center"
-        >
-          <h1 class="uppercase">semester project 1</h1>
-        </div>
+        <div class="flip-card">
+          <div
+            class="flip-card__front-side flex justified-evenly align-items-center"
+          >
+            <h1 class="uppercase">semester project 1</h1>
+          </div>
 
-        <div
-          class="flip-card__back-side flex justified-center align-items-center"
-        >
-          <article class="card-wrapper flex">
-            <feature>
-              <img
-                src="/img/sp1.jpg"
-                alt="semester project 1"
-                class="card-img"
-              />
-            </feature>
-            <section class="card-text-container flex-column justified-center">
-              <h2>semester project 1</h2>
-              <p><i class="fa-brands fa-github"></i>GitHUB</p>
-              <p><i class="fa-solid fa-globe"></i>Website</p>
-            </section>
-          </article>
+          <div
+            class="flip-card__back-side flex justified-center align-items-center"
+          >
+            <article class="flip-card-wrapper flex">
+              <feature>
+                <img
+                  src="/img/sp1.jpg"
+                  alt="semester project 1"
+                  class="flip-card-img"
+                />
+              </feature>
+              <div
+                class="flip-card-text-container flex-column justified-center"
+              >
+                <h2 class="capitalize">semester project 1</h2>
+                <p><i class="fa-brands fa-github"></i>GitHUB</p>
+                <p><i class="fa-solid fa-globe"></i>Website</p>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-      <div class="flip-card">
-        <div
-          class="flip-card__front-side flex justified-evenly align-items-center"
-        >
-          <h1 class="uppercase">cross-course project</h1>
-        </div>
+        <div class="flip-card">
+          <div
+            class="flip-card__front-side flex justified-evenly align-items-center"
+          >
+            <h1 class="uppercase">cross-course project</h1>
+          </div>
 
-        <div
-          class="flip-card__back-side flex justified-center align-items-center"
-        >
-          <article class="card-wrapper flex">
-            <feature>
-              <img
-                src="/img/pe1.jpg"
-                alt="cross-course project"
-                class="card-img"
-              />
-            </feature>
-            <section class="card-text-container flex-column justified-center">
-              <h2>Project Exam 1</h2>
-              <p>GitHUB</p>
-              <p>Website</p>
-            </section>
-          </article>
+          <div
+            class="flip-card__back-side flex justified-center align-items-center"
+          >
+            <article class="flip-card-wrapper flex">
+              <feature>
+                <img
+                  src="/img/Cross-course.jpg"
+                  alt="cross-course project"
+                  class="flip-card-img"
+                />
+              </feature>
+              <div
+                class="flip-card-text-container flex-column justified-center"
+              >
+                <h2 class="capitalize">cross-course project</h2>
+                <p>GitHUB</p>
+                <p>Website</p>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
+      </section>
+      <section class="card" id="two"></section>
+      <section class="card" id="three"></section>
+      <section class="card" id="four">
+        <h2 class="uppercase">about me</h2>
+      </section>
     </main>
-    <footer>footer</footer>
+    <footer class="footer">footer</footer>
+    <button id="backToTop" title="Gå til toppen">↑ Top</button>
   </body>
 </html>
