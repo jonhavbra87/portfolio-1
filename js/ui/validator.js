@@ -2,9 +2,6 @@ const name = document.querySelector("#Name");
 const nameError = document.querySelector("#NameError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
-const phone = document.querySelector("#phone");
-const phoneError = document.querySelector("#phoneError");
-const emailSignup = document.querySelector("#emailSignup");
 
 function nameValidator() {
     if (checkLength(name.value, 4)) {
@@ -12,16 +9,6 @@ function nameValidator() {
         return true;
     } else {
         nameError.style.display = "block";
-        return false;
-    }
-}
-
-function phoneNumberValidator() {
-    if (checkLength(phone.value.trim(), 7)) {
-        phoneError.style.display = "none";
-        return true;
-    } else {
-        phoneError.style.display = "block";
         return false;
     }
 }
@@ -49,7 +36,7 @@ function emailSignUpValidator() {
 }
 
 function formValidator(event) {
-    if (!nameValidator() || !phoneNumberValidator() || !emailValidator() || !emailSignUpValidator()) {
+    if (!nameValidator() || !emailValidator() || !emailSignUpValidator()) {
         event.preventDefault();
     }
 }

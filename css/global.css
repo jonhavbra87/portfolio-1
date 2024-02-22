@@ -139,3 +139,10 @@ p {
 .capitalize {
   text-transform: capitalize;
 }
+
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}

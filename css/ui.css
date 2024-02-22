@@ -123,6 +123,15 @@ i {
   color: #fff;
   display: block;
 }
+.profile-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
 
 /* ---------BUTTON----------- */
 #backToTop {

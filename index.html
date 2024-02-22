@@ -18,15 +18,36 @@
         <img src="/img/laptop-logo.jpg" alt="laptop in the grass at night" />
 
         <nav class="flex">
-          <a href="#one">one</a>
-          <a href="#two">two</a>
-          <a href="#three">three</a>
-          <a href="#four">about me</a>
+          <a href="#one">about me</a>
+          <a href="#two">projects</a>
+          <a href="#three">contact</a>
+          <a href="#four">four</a>
         </nav>
       </div>
     </header>
     <main class="flex-column justified-center align-items-center">
       <section class="card" id="one">
+        <h1 class="uppercase">about me</h1>
+        <article class="flex">
+          <feature>
+            <img
+              src="/img/Profile.jpg"
+              alt="profile picture"
+              class="profile-img"
+            />
+          </feature>
+          <div class="text-container">
+            <p>
+              My name is <span class="bold">Jon Are</span> a passionate and dedicated front-end development student at Noroff. Specializing in the creative use of HTML, CSS, and vanilla JavaScript, I'm deeply committed to building not just functional, but also aesthetically pleasing websites. My journey in the digital realm is fueled by a keen desire to stay abreast of the latest trends and techniques in front-end development.</p>
+
+              <p>As an online learner, I've developed a strong self-driven work ethic and a flexible approach to <span class="bold">problem-solving.</span> My projects showcase a blend of modern design principles and efficient coding practices. I believe in crafting websites that are not only visually stunning but also <span class="bold">user-friendly</span>, ensuring a seamless experience for all users.</p>
+              
+              <p>My portfolio is a testament to my journey in front-end development, featuring projects that highlight my ability to transform ideas into digital realities. Each project is a step forward in my continuous quest for knowledge and excellence in the field of web development. I am eager to collaborate, learn, and grow as I embark on new challenges and opportunities in the dynamic world of front-end development.</p>
+              <span class="italic">Let's create something amazing together!</span>
+            </p>
+          </div>
+      </section>
+      <section class="card" id="two">
         <div class="flip-card">
           <div
             class="flip-card__front-side flex justified-evenly align-items-center"
@@ -112,11 +133,7 @@
           </div>
         </div>
       </section>
-      <section class="card" id="two"></section>
       <section class="card" id="three">
-        <h2 class="uppercase">about me</h2>
-      </section>
-      <section class="card" id="four">
         <div class="form-container">
           <form
             method="GET"
@@ -132,16 +149,6 @@
               <div class="form-error" id="NameError">
                 <i class="fa-solid fa-triangle-exclamation"></i> Minimum 2
                 characters
-              </div>
-            </div>
-            <div>
-              <label>
-                Phone number (minimum 8 digits)
-                <input name="phone" id="phone" />
-              </label>
-              <div class="form-error" id="phoneError">
-                <i class="fa-solid fa-triangle-exclamation"></i> Your phone
-                number must be at least 8 digits
               </div>
             </div>
             <div>
@@ -169,6 +176,7 @@
           </form>
         </div>
       </section>
+      <section class="card" id="four"></section>
     </main>
     <footer class="footer">footer</footer>
     <button id="backToTop" title="Gå til toppen">↑ Top</button>
