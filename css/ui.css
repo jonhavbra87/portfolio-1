@@ -74,6 +74,7 @@ nav a:focus {
 .flip-card__front-side {
   transform: rotateY(0deg);
   background: url("/img/flip-card.jpg");
+  align-items: center;
 }
 
 .flip-card__back-side {
@@ -101,11 +102,19 @@ nav a:focus {
   background-repeat: no-repeat;
 }
 
-.flip-card:hover .flip-card__front-side {
+/* .flip-card:hover .flip-card__front-side {
   transform: rotateY(180deg);
 }
 
 .flip-card:hover .flip-card__back-side {
+  transform: rotateY(0deg);
+} */
+
+.flip-card.is-flipped .flip-card__front-side {
+  transform: rotateY(180deg);
+}
+
+.flip-card.is-flipped .flip-card__back-side {
   transform: rotateY(0deg);
 }
 
@@ -151,6 +160,32 @@ i {
 }
 
 /* ---------BUTTON----------- */
+
+.card-button {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: var(--midnight);
+  color: var(--light);
+  text-align: center;
+  transition: all 0.15s;
+}
+
+.card-button:hover {
+  color: var(--midnight);
+  background-color: var(--color);
+}
+
+.card-button:active {
+  background-color: var(--midnight);
+  color: var(--light);
+}
+
 #backToTop {
   position: fixed;
   bottom: 20px;
