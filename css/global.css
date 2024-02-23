@@ -1,10 +1,11 @@
 /* --------------------------- THEME & UTILITIES ---------------------------  */
 :root {
-  --padding: 1rem;
-  --light: #ffffff;
+  --light: snow;
   --black: #181414;
   --midnight: #100e17;
   --alert: red;
+  --dark: #0f0c1d;
+  --brighter: #1d1a35;
 }
 
 *,
@@ -24,13 +25,14 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   height: 100vh;
-  /* width: 100%; */
   background: #343a40;
+}
+
+main {
 }
 
 .header,
 .footer {
-  /* padding: var(--padding); */
   background: var(--midnight);
   color: var(--light);
   height: 200px;
@@ -59,6 +61,7 @@ h2 {
   font-size: var(--font-size-h2);
 }
 
+a,
 p {
   font-size: var(--font-size-p);
 }
@@ -124,6 +127,9 @@ p {
   gap: 3rem;
 }
 
+.horizontal-gap {
+  gap: 0 3rem;
+}
 .padding {
   padding: 2rem;
 }

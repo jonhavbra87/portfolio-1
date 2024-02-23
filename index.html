@@ -18,17 +18,17 @@
         <img src="/img/laptop-logo.jpg" alt="laptop in the grass at night" />
 
         <nav class="flex">
-          <a href="#one">about me</a>
-          <a href="#two">projects</a>
-          <a href="#three">contact</a>
-          <a href="#four">four</a>
+          <a href="#one"><h1>about me</h1></a>
+          <a href="#two"><h1>projects</h1></a>
+          <a href="#three"><h1>contact</h1></a>
+          <a href="#four"><h1>wtf</h1></a>
         </nav>
       </div>
     </header>
     <main class="flex-column justified-center align-items-center">
-      <section class="card" id="one">
+      <section class="card " id="one">
         <h1 class="uppercase">about me</h1>
-        <article class="flex">
+        <article class="flex justified-center align-items-center horizontal-gap">
           <feature>
             <img
               src="/img/Profile.jpg"
@@ -46,8 +46,9 @@
               <span class="italic">Let's create something amazing together!</span>
             </p>
           </div>
+          </article>
       </section>
-      <section class="card" id="two">
+      <section class="card flex justified-center align-items-center flex-wrap horizontal-gap" id="two">
         <div class="flip-card">
           <div
             class="flip-card__front-side flex justified-evenly align-items-center"
@@ -56,24 +57,13 @@
           </div>
 
           <div
-            class="flip-card__back-side flex justified-center align-items-center"
+            class="flip-card__back-side flex justified-center align-items-center pe1"
           >
-            <article class="flip-card-wrapper flex">
-              <feature>
-                <img
-                  src="/img/pe1.jpg"
-                  alt="project exam 1"
-                  class="flip-card-img"
-                />
-              </feature>
-              <div
-                class="flip-card-text-container flex-column justified-center"
-              >
-                <h2 class="capitalize">project exam 1</h2>
-                <p>GitHUB</p>
-                <p>Website</p>
-              </div>
-            </article>
+          <article class="flip-card-text-container flex-column">
+            <h2 class="capitalize">project exam 1</h2>
+            <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-jonhavbra87"><i class="fa-brands fa-github"></i>GitHUB</a>
+            <a href="https://kil-handball.kongsvinger-it.no/index.html"><i class="fa-solid fa-globe"></i>Website</a>
+        </article>
           </div>
         </div>
         <div class="flip-card">
@@ -84,24 +74,13 @@
           </div>
 
           <div
-            class="flip-card__back-side flex justified-center align-items-center"
+            class="flip-card__back-side flex justified-center align-items-center sp1"
           >
-            <article class="flip-card-wrapper flex">
-              <feature>
-                <img
-                  src="/img/sp1.jpg"
-                  alt="semester project 1"
-                  class="flip-card-img"
-                />
-              </feature>
-              <div
-                class="flip-card-text-container flex-column justified-center"
-              >
-                <h2 class="capitalize">semester project 1</h2>
-                <p><i class="fa-brands fa-github"></i>GitHUB</p>
-                <p><i class="fa-solid fa-globe"></i>Website</p>
-              </div>
-            </article>
+          <article class="flip-card-text-container flex-column">
+            <h2 class="capitalize">semester project 1</h2>
+            <a href="https://github.com/jonhavbra87/Community_Science_Museum"><i class="fa-brands fa-github"></i>GitHUB</a>
+            <a href="https://c-s-museum.netlify.app/"><i class="fa-solid fa-globe"></i>Website</a>
+        </article>
           </div>
         </div>
         <div class="flip-card">
@@ -112,28 +91,17 @@
           </div>
 
           <div
-            class="flip-card__back-side flex justified-center align-items-center"
+            class="flip-card__back-side cross-course"
           >
-            <article class="flip-card-wrapper flex">
-              <feature>
-                <img
-                  src="/img/Cross-course.jpg"
-                  alt="cross-course project"
-                  class="flip-card-img"
-                />
-              </feature>
-              <div
-                class="flip-card-text-container flex-column justified-center"
-              >
+            <article class="flip-card-text-container flex-column">
                 <h2 class="capitalize">cross-course project</h2>
-                <p>GitHUB</p>
-                <p>Website</p>
-              </div>
+                <a href="https://github.com/jonhavbra87/gamehub/tree/wpAPI"><i class="fa-brands fa-github"></i>GitHUB</a>
+                <a href="https://gamehub.kongsvinger-it.no/i"><i class="fa-solid fa-globe"></i>Website</a>
             </article>
           </div>
         </div>
       </section>
-      <section class="card" id="three">
+      <section class="card justified-center align-items-center" id="three">
         <div class="form-container">
           <form
             method="GET"
