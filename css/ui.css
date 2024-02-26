@@ -311,6 +311,7 @@ textarea:focus {
   color: var(--alert);
 }
 
+
 .form-button {
   font-size: var(--font-size-h3);
   background-color: var(--light);
@@ -325,6 +326,7 @@ textarea:focus {
   width: 30%;
   transition: all 0.5s ease-in-out;
 }
+
 
 .form-button:hover {
   background: linear-gradient(
