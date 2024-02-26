@@ -77,6 +77,11 @@
   align-items: end;
 }
 
+.sticker{
+  font-size: var(--font-size-h3);
+
+}
+
 /* ------------- FLIP-CARD ------------------- */
 .flip-card {
   position: relative;
