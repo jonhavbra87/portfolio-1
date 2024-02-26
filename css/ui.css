@@ -57,7 +57,7 @@
     var(--dark),
     var(--brighter)
   );
-  opacity: 0;
+  opacity: 0.9;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -238,13 +238,14 @@ i {
   display: none;
   color: var(--light);
   z-index: 100;
-  font-size: var(--font-size-h1);
+  font-size: 1.8em;
+  transition: all 1s ease-in-out;
 }
 
 .back-to-top i:hover {
   color: var(--shades);
   cursor: pointer;
-  transform: rotate(360deg);
+  transform: rotate(-360deg);
 }
 
 .form-container {
