@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio 1</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="data:," />
+    <script src="/js/index.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/fe3b43ee88.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <!-- <img src="/img/laptop-logo.jpg" alt="laptop in the grass at night" /> -->
+        <h1 class="uppercase">kongsvinger-it</h1>
+
+        <nav class="flex">
+          <a href="#one"><h1>about me</h1></a>
+          <a href="#two"><h1>projects</h1></a>
+          <a href="#three"><h1>contact</h1></a>
+          <a href="#four"><h1>wtf</h1></a>
+        </nav>
+      </div>
+    </header>
+    <main class="flex-column justified-center align-items-center">
+      <section class="card " id="one">
+        <h1 class="uppercase">about me</h1>
+        <article class="flex justified-center align-items-center horizontal-gap">
+          <feature>
+            <img
+              src="/img/Profile.jpg"
+              alt="profile picture"
+              class="profile-img"
+            />
+          </feature>
+          <div class="text-container">
+            <p>
+              My name is <span class="bold">Jon Are</span> a passionate and dedicated front-end development student at Noroff. Specializing in the creative use of HTML, CSS, and vanilla JavaScript, I'm deeply committed to building not just functional, but also aesthetically pleasing websites. My journey in the digital realm is fueled by a keen desire to stay abreast of the latest trends and techniques in front-end development.</p>
+
+              <p>As an online learner, I've developed a strong self-driven work ethic and a flexible approach to <span class="bold">problem-solving.</span> My projects showcase a blend of modern design principles and efficient coding practices. I believe in crafting websites that are not only visually stunning but also <span class="bold">user-friendly</span>, ensuring a seamless experience for all users.</p>
+              
+              <p>My portfolio is a testament to my journey in front-end development, featuring projects that highlight my ability to transform ideas into digital realities. Each project is a step forward in my continuous quest for knowledge and excellence in the field of web development. I am eager to collaborate, learn, and grow as I embark on new challenges and opportunities in the dynamic world of front-end development.</p>
+              <span class="italic">Let's create something amazing together!</span>
+            </p>
+          </div>
+          </article>
+      </section>
+      <section class="card flex justified-center align-items-center flex-wrap horizontal-gap" id="two">
+        <div class="flip-card">
+          <div
+            class="flip-card__front-side flex justified-evenly align-items-center"
+          >
+            <h1 class="uppercase">project exam 1</h1>
+            <button class="card-button"><i class="fa-solid fa-play"></i></button>
+          </div>
+
+          <div
+            class="flip-card__back-side flex justified-center align-items-center pe1"
+          >
+          <article class="flip-card-text-container flex-column">
+            <h2 class="capitalize">project exam 1</h2>
+            <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-jonhavbra87"><i class="fa-brands fa-github"></i>GitHUB</a>
+            <a href="https://kil-handball.kongsvinger-it.no/index.html"><i class="fa-solid fa-globe"></i>Website</a>
+            <button class="card-button"><i class="fa-solid fa-eject"></i></button>
+        </article>
+    
+          </div>
+        </div>
+        <div class="flip-card">
+          <div
+            class="flip-card__front-side flex justified-evenly align-items-center"
+          >
+            <h1 class="uppercase">semester project 1</h1>
+            <button class="card-button"><i class="fa-solid fa-play"></i></button>
+          </div>
+
+          <div
+            class="flip-card__back-side flex justified-center align-items-center sp1"
+          >
+          <article class="flip-card-text-container flex-column">
+            <h2 class="capitalize">semester project 1</h2>
+            <a href="https://github.com/jonhavbra87/Community_Science_Museum"><i class="fa-brands fa-github"></i>GitHUB</a>
+            <a href="https://c-s-museum.netlify.app/"><i class="fa-solid fa-globe"></i>Website</a>
+            <button class="card-button"><i class="fa-solid fa-eject"></i></button>
+        </article>
+     
+          </div>
+        </div>
+        <div class="flip-card">
+          <div
+            class="flip-card__front-side flex justified-evenly align-items-center"
+          >
+            <h1 class="uppercase">cross-course project</h1>
+            <button class="card-button"><i class="fa-solid fa-play"></i></button>
+          </div>
+
+          <div
+            class="flip-card__back-side cross-course"
+          >
+            <article class="flip-card-text-container flex-column">
+                <h2 class="capitalize">cross-course project</h2>
+                <a href="https://github.com/jonhavbra87/gamehub/tree/wpAPI"><i class="fa-brands fa-github"></i>GitHUB</a>
+                <a href="https://gamehub.kongsvinger-it.no/i"><i class="fa-solid fa-globe"></i>Website</a>
+                <button class="card-button"><i class="fa-solid fa-eject"></i></button>
+            </article>
+  
+          </div>
+        </div>
+      </section>
+      <section class="card justified-center align-items-center" id="three">
+        <div class="form-container">
+          <form
+            method="GET"
+            action="/contactSuccess/index.html"
+            class=""
+            id="contactForm"
+          >
+            <div>
+              <label>
+                Name (required)
+                <input name="Name" id="Name" />
+              </label>
+              <div class="form-error" id="NameError">
+                <i class="fa-solid fa-triangle-exclamation"></i> Minimum 2
+                characters
+              </div>
+            </div>
+            <div>
+              <label>
+                Email (required) <input name="email" id="email" />
+              </label>
+              <div class="form-error" id="emailError">
+                <i class="fa-solid fa-triangle-exclamation"></i> Please enter a
+                valid email address
+              </div>
+            </div>
+            <div>
+              <label>
+                Message
+                <textarea
+                  placeholder="Please write yor message here"
+                  name="story"
+                  id="story"
+                  rows="5"
+                  cols="25"
+                ></textarea>
+              </label>
+            </div>
+            <input type="submit" class="form-button" value="Submit" />
+          </form>
+        </div>
+      </section>
+      <section class="card" id="four"></section>
+    </main>
+    <footer class="footer">footer</footer>
+    <button id="backToTop" title="Gå til toppen">↑ Top</button>
+  </body>
+</html>

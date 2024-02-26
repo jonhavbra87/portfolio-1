@@ -15,21 +15,23 @@
   <body>
     <header class="header">
       <div class="header-wrapper">
-        <img src="/img/laptop-logo.jpg" alt="laptop in the grass at night" />
+        <!-- <img src="/img/laptop-logo.jpg" alt="laptop in the grass at night" /> -->
+        <h1 class="uppercase">kongsvinger-it</h1>
 
         <nav class="flex">
           <a href="#one"><h1>about me</h1></a>
-          <a href="#two"><h1>projects</h1></a>
-          <a href="#three"><h1>contact</h1></a>
-          <a href="#four"><h1>wtf</h1></a>
+          <a href="#two"><h1>project exam 1</h1></a>
+          <a href="#three"><h1>semester project 1</h1></a>
+          <a href="#four"><h1>cross-course</h1></a>
+          <a href="#five"><h1>contact</h1></a>
         </nav>
       </div>
     </header>
     <main class="flex-column justified-center align-items-center">
-      <section class="card " id="one">
-        <h1 class="uppercase">about me</h1>
-        <article class="flex justified-center align-items-center horizontal-gap">
-          <feature>
+      <section class="card" id="one">
+        <h1 class="uppercase bold text-align-center">about me</h1>
+        <article class="flex justified-center align-items-center horizontal-gap about-me">
+      <feature>
             <img
               src="/img/Profile.jpg"
               alt="profile picture"
@@ -40,7 +42,7 @@
             <p>
               My name is <span class="bold">Jon Are</span> a passionate and dedicated front-end development student at Noroff. Specializing in the creative use of HTML, CSS, and vanilla JavaScript, I'm deeply committed to building not just functional, but also aesthetically pleasing websites. My journey in the digital realm is fueled by a keen desire to stay abreast of the latest trends and techniques in front-end development.</p>
 
-              <p>As an online learner, I've developed a strong self-driven work ethic and a flexible approach to <span class="bold">problem-solving.</span> My projects showcase a blend of modern design principles and efficient coding practices. I believe in crafting websites that are not only visually stunning but also <span class="bold">user-friendly</span>, ensuring a seamless experience for all users.</p>
+              <p>As an online learner, I've developed a strong self-driven work ethic and a flexible approach to <span class="bold">problem-solving.</span> My projects showcase a blend of <span class="bold">modern design principles</span> and <span class="bold">efficient</span> coding practices. I believe in crafting websites that are not only visually stunning but also <span class="bold">user-friendly</span>, ensuring a seamless experience for all users.</p>
               
               <p>My portfolio is a testament to my journey in front-end development, featuring projects that highlight my ability to transform ideas into digital realities. Each project is a step forward in my continuous quest for knowledge and excellence in the field of web development. I am eager to collaborate, learn, and grow as I embark on new challenges and opportunities in the dynamic world of front-end development.</p>
               <span class="italic">Let's create something amazing together!</span>
@@ -48,69 +50,99 @@
           </div>
           </article>
       </section>
-      <section class="card flex justified-center align-items-center flex-wrap horizontal-gap" id="two">
+      <section class="card flex justified-center align-items-center flex-wrap" id="two">
         <div class="flip-card">
           <div
-            class="flip-card__front-side flex justified-evenly align-items-center"
+            class="flip-card__front-side flex justified-evenly card-img-pe1"
           >
-            <h1 class="uppercase">project exam 1</h1>
-            <button class="card-button"><i class="fa-solid fa-play"></i></button>
+            <h1 class="uppercase h1-background bold">project exam 1</h1>
+            <button class="card-button"><i class="fa-solid fa-plus"></i></button>
           </div>
 
-          <div
-            class="flip-card__back-side flex justified-center align-items-center pe1"
-          >
+          <div class="flip-card__back-side flex">
+          <img class="flip-card__back-img" src="/img/pe1.jpg" alt="picture of kil-handball website on mobile">
           <article class="flip-card-text-container flex-column">
-            <h2 class="capitalize">project exam 1</h2>
-            <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-jonhavbra87"><i class="fa-brands fa-github"></i>GitHUB</a>
-            <a href="https://kil-handball.kongsvinger-it.no/index.html"><i class="fa-solid fa-globe"></i>Website</a>
-            <button class="card-button"><i class="fa-solid fa-eject"></i></button>
+            <h2 class="capitalize bold">project exam 1<h2>
+            <p>In my exam my goal was to create a website that could work for my local handball team. The users are coaches, parents and athletes related to the club, and the website works as a information channel and exposure of the club.</p>
+            <div class="flip-card__back-wrapper">
+              <div>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-jonhavbra87">GitHUB</a></div>
+              <div>
+                <i class="fa-solid fa-globe"></i>
+                <a href="https://kil-handball.kongsvinger-it.no/index.html">Website</a>
+             </div>
+             </div>
+            <button class="card-button"><i class="fa-solid fa-minus"></i></button>
         </article>
-    
           </div>
         </div>
-        <div class="flip-card">
-          <div
-            class="flip-card__front-side flex justified-evenly align-items-center"
-          >
-            <h1 class="uppercase">semester project 1</h1>
-            <button class="card-button"><i class="fa-solid fa-play"></i></button>
-          </div>
-
-          <div
-            class="flip-card__back-side flex justified-center align-items-center sp1"
-          >
-          <article class="flip-card-text-container flex-column">
-            <h2 class="capitalize">semester project 1</h2>
-            <a href="https://github.com/jonhavbra87/Community_Science_Museum"><i class="fa-brands fa-github"></i>GitHUB</a>
-            <a href="https://c-s-museum.netlify.app/"><i class="fa-solid fa-globe"></i>Website</a>
-            <button class="card-button"><i class="fa-solid fa-eject"></i></button>
-        </article>
-     
-          </div>
-        </div>
-        <div class="flip-card">
-          <div
-            class="flip-card__front-side flex justified-evenly align-items-center"
-          >
-            <h1 class="uppercase">cross-course project</h1>
-            <button class="card-button"><i class="fa-solid fa-play"></i></button>
-          </div>
-
-          <div
-            class="flip-card__back-side cross-course"
-          >
-            <article class="flip-card-text-container flex-column">
-                <h2 class="capitalize">cross-course project</h2>
-                <a href="https://github.com/jonhavbra87/gamehub/tree/wpAPI"><i class="fa-brands fa-github"></i>GitHUB</a>
-                <a href="https://gamehub.kongsvinger-it.no/i"><i class="fa-solid fa-globe"></i>Website</a>
-                <button class="card-button"><i class="fa-solid fa-eject"></i></button>
-            </article>
-  
-          </div>
-        </div>
+        
       </section>
-      <section class="card justified-center align-items-center" id="three">
+      <section class="card flex justified-center align-items-center flex-wrap" id="three">
+        <div class="flip-card">
+          <div
+            class="flip-card__front-side flex justified-evenly align-items-center card-img-sp1"
+          >
+            <h1 class="uppercase h1-background bold">semester project 1</h1>
+            <button class="card-button"><i class="fa-solid fa-plus"></i></button>
+          </div>
+
+          <div
+            class="flip-card__back-side flex"
+          >
+          <img class="flip-card__back-img" src="/img/sp1.jpg" alt="picture of community science museum website on mobile">
+          <article class="flip-card-text-container flex-column">
+            <h2 class="capitalize bold">semester project 1</h2>
+            <p>In my semester project 1 the users are teachers, studends, parents and child from age 7 - 15 years old.</p>
+            <div class="flip-card__back-wrapper">
+              <div>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/jonhavbra87/Community_Science_Museum">GitHUB</a></div>
+              <div>
+                <i class="fa-solid fa-globe"></i>
+                <a href="https://c-s-museum.netlify.app/">Website</a>
+             </div>
+             </div>
+            <button class="card-button"><i class="fa-solid fa-minus"></i></button>
+        </article>
+          </div>
+        </div>
+        
+   
+      </section>
+      <section class="card flex justified-center align-items-center flex-wrap" id="four">
+        <div class="flip-card">
+          <div
+          class="flip-card__front-side flex justified-center card-img-ccp"
+        >
+          <h1 class="uppercase h1-background bold">cross-course project</h1>
+          <button class="card-button"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <div class="flip-card__back-side flex">
+          <img class="flip-card__back-img" src="/img/ccp.jpg" alt="picture of cross-course project website on mobile">
+          <article class="flip-card-text-container flex-column">
+              <h2 class="capitalize bold">cross-course project</h2>
+              <p>In my exam my goal was to create a website that could work for my local handball team. The users are coaches, parents and athletes related to the club, and the website works as a information channel and exposure of the club.</p>
+              <div class="flip-card__back-wrapper">
+                <div>
+                  <i class="fa-brands fa-github"></i>
+                  <a href="https://github.com/jonhavbra87/gamehub/tree/wpAPI">GitHUB</a>
+                </div>
+                <div>
+                  <i class="fa-solid fa-globe"></i>
+                  <a href="https://gamehub.kongsvinger-it.no">Website</a>
+               </div>
+              </div>
+              <button class="card-button"><i class="fa-solid fa-minus"></i></button>
+
+          </article>
+
+        </div>
+      </div></section>
+      <section class="card flex-column justified-center align-items-center" id="five">
+        <h1 class="uppercase bold">contact me</h1>
         <div class="form-container">
           <form
             method="GET"
@@ -151,9 +183,8 @@
             </div>
             <input type="submit" class="form-button" value="Submit" />
           </form>
-        </div>
-      </section>
-      <section class="card" id="four"></section>
+      </div>
+    </section>
     </main>
     <footer class="footer">footer</footer>
     <button id="backToTop" title="Gå til toppen">↑ Top</button>

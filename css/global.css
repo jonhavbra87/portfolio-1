@@ -6,6 +6,9 @@
   --alert: red;
   --dark: #0f0c1d;
   --brighter: #1d1a35;
+  --shades: #51409c;
+  --transparent: transparent;
+  --font-weight-700: 700;
 }
 
 *,
@@ -27,18 +30,17 @@ body {
   height: 100vh;
   background: linear-gradient(
     65deg,
-    var(--midnight),
+    var(--shades),
     var(--dark),
     var(--brighter)
   );
 }
 
-main {
-}
+/* main {
+} */
 
 .header,
 .footer {
-  background: var(--midnight);
   color: var(--light);
   height: 200px;
   display: flex;
@@ -56,14 +58,16 @@ h3 {
 
 h1 {
   font-size: var(--font-size-h1);
+  letter-spacing: 3px;
 }
 
 h2 {
   font-size: var(--font-size-h2);
+  letter-spacing: 2px;
 }
 
-h2 {
-  font-size: var(--font-size-h2);
+h3 {
+  font-size: var(--font-size-h3);
 }
 
 a,
@@ -135,8 +139,9 @@ p {
 .horizontal-gap {
   gap: 0 3rem;
 }
+
 .padding {
-  padding: 2rem;
+  padding: var(--padding);
 }
 
 .hidden {

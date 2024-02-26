@@ -36,12 +36,12 @@ nav a:focus {
   height: 100vh;
   display: flex;
   justify-content: center;
-  position: sticky;
+  /* position: sticky; This was causing the card to stick to the top of the page */
   top: 0;
   color: var(--light);
   background: linear-gradient(
     65deg,
-    var(--midnight),
+    var(--shades),
     var(--dark),
     var(--brighter)
   );
@@ -51,10 +51,27 @@ nav a:focus {
   /* background: url("/img/background3.jpg") no-repeat top right/cover; */
 }
 
+/* -------------- ABOUT ME------------------ */
+
+.profile-img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+.text-container {
+  max-width: 50rem;
+  padding: 2rem;
+  align-items: end;
+}
+
+/* ------------- FLIP-CARD ------------------- */
 .flip-card {
   position: relative;
-  height: 400px;
-  aspect-ratio: 2/3;
+  height: 600px;
+  aspect-ratio: 2/1;
   perspective: 3200px;
   margin: 10px;
 }
@@ -65,35 +82,55 @@ nav a:focus {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
-  transition: transform 1s ease-in-out;
+  box-shadow: 4px 8px 40px 6px rgba(255, 255, 255, 0.09);
+  transition: transform 1.5s ease-in-out;
   backface-visibility: hidden;
   overflow: hidden;
 }
 
 .flip-card__front-side {
-  transform: rotateY(0deg);
-  background: url("/img/flip-card.jpg");
-  align-items: center;
+  transform: rotateX(0deg);
+  align-items: end;
 }
 
 .flip-card__back-side {
-  transform: rotateY(-180deg);
-  border-radius: 40px 40px 15px 15px;
+  transform: rotateX(-180deg);
+  justify-content: space-evenly;
+  background: var(--brighter);
+}
+.flip-card.is-flipped .flip-card__front-side {
+  transform: rotateX(180deg);
+}
+
+.flip-card.is-flipped .flip-card__back-side {
+  transform: rotateX(0deg);
+}
+
+.card-img-pe1 {
+  background: url("/img/pe1_desktop.jpg");
 }
 
 .pe1 {
   background: url("/img/pe1.jpg");
 }
 
+.card-img-sp1 {
+  background: url("/img/sp1_desktop.jpg");
+}
 .sp1 {
   background: url("/img/sp1.jpg");
 }
 
+.card-img-ccp {
+  background: url("/img/ccp_desktop.jpg");
+}
 .cross-course {
   background: url("/img/cross-course.jpg");
 }
 
+.card-img-pe1,
+.card-img-sp1,
+.card-img-ccp,
 .flip-card__front-side,
 .pe1,
 .sp1,
@@ -102,46 +139,44 @@ nav a:focus {
   background-repeat: no-repeat;
 }
 
-/* .flip-card:hover .flip-card__front-side {
-  transform: rotateY(180deg);
+.flip-card__back-img {
+  position: relative;
+  bottom: -150px;
 }
 
-.flip-card:hover .flip-card__back-side {
-  transform: rotateY(0deg);
-} */
-
-.flip-card.is-flipped .flip-card__front-side {
-  transform: rotateY(180deg);
-}
-
-.flip-card.is-flipped .flip-card__back-side {
-  transform: rotateY(0deg);
-}
-
-.flip-card-wrapper {
-  display: flex;
-}
-
-.text-container {
-  max-width: 50rem;
+.h1-background {
+  background-color: rgba(0, 0, 0, 0.95);
   padding: 2rem;
-  align-items: end;
+  border-radius: 10px;
+  text-align: center;
+  letter-spacing: 2px;
 }
-
 .flip-card-text-container {
   padding: 2rem;
-  background: rgba(0, 0, 0, 0.6);
-
+  /* background: rgba(94, 54, 180, 0.6); */
   justify-content: end;
   align-items: start;
   height: 100%;
+  width: 50%;
 }
+
+.flip-card__back-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  gap: 2rem;
+}
+
 .flip-card-text-container a {
   color: var(--light);
 }
 
 .flip-card-text-container a:hover {
-  color: pink;
+  /* color: rgb(255, 192, 236); */
+  color: #6359b5;
 }
 
 i {
@@ -150,42 +185,38 @@ i {
   display: block;
 }
 
-.profile-img {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 auto;
-  display: block;
-}
-
 /* ---------BUTTON----------- */
-
+/* Card Button */
 .card-button {
   position: absolute;
-  bottom: 30px;
-  right: 10px;
+  bottom: 20px;
+  right: 20px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   text-transform: uppercase;
   font-weight: 700;
-  background-color: var(--midnight);
-  color: var(--light);
+  background-color: var(--light);
   text-align: center;
-  transition: all 0.15s;
+  transition: all 0.5s;
 }
 
-.card-button:hover {
+.card-button i {
   color: var(--midnight);
-  background-color: var(--color);
+  transition: transform 1s ease-in-out;
+  text-align: center;
 }
 
-.card-button:active {
-  background-color: var(--midnight);
-  color: var(--light);
+.card-button:hover i {
+  transform: rotate(270deg);
 }
 
+.card-button:active i {
+  /* color: var(--light); */
+  color: #6359b5;
+}
+
+/* Back To Top Button */
 #backToTop {
   position: fixed;
   bottom: 20px;
@@ -210,7 +241,7 @@ i {
 
 .login-container,
 .form-container {
-  max-width: 544px;
+  max-width: 600px;
   width: 100%;
   margin: 0 auto;
   padding: var(--padding);
@@ -218,20 +249,18 @@ i {
   color: var(--primary);
 }
 
-.login-container {
-  max-width: 300px;
-}
-
 form div {
-  margin: 3px 2rem;
+  margin: 10px 3rem;
 }
 
 input,
 textarea {
-  border: solid;
-  border-radius: 5px;
+  background-color: var(--dark);
+  color: var(--light);
+  border: 2px solid var(--dark);
+  border-radius: 10px;
   display: block;
-  font-size: 1rem;
+  font-size: var(--font-size-p);
   padding: var(--padding);
   width: 100%;
   cursor: text;
@@ -243,15 +272,15 @@ textarea {
 }
 
 input:required {
-  border-left: 0.3em solid var(--contrast);
-  border-right: 0.3em solid var(--contrast);
+  border-left: 0.3em solid var(--brighter);
+  border-right: 0.3em solid var(--brighter);
 }
 
 input:focus,
 textarea:focus {
   border-color: var(--button);
   outline: none;
-  box-shadow: 0 0 5px var(--contrast);
+  box-shadow: 0 0 5px var(--brighter);
 }
 
 .form-error {
@@ -265,4 +294,32 @@ textarea:focus {
 
 .val_error {
   color: var(--alert);
+}
+
+.form-button {
+  font-size: var(--font-size-h3);
+  background-color: var(--light);
+  color: var(--black);
+  border-radius: 10px;
+  padding: var(--padding);
+  font-variant: small-caps;
+  margin: 10px auto;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  width: 30%;
+  transition: all 0.5s ease-in-out;
+}
+
+.form-button:hover {
+  background: linear-gradient(
+    -135deg,
+    var(--shades),
+    var(--dark),
+    var(--brighter)
+  );
+  color: var(--light);
+  width: 50%;
+  transform: 1s ease-in-out;
+  border: none;
 }

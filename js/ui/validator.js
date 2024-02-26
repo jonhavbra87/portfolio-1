@@ -4,7 +4,7 @@ const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 
 function nameValidator() {
-    if (checkLength(name.value, 4)) {
+    if (checkLength(name.value, 1)) {
         nameError.style.display = "none";
         return true;
     } else {
@@ -23,20 +23,9 @@ function emailValidator() {
     }
 }
 
-function emailSignUpValidator() {
-    if (validateEmail(emailSignup.value)) {
-        emailError.style.display = "none";
-        emailSignup.classList.remove("input-error");
-        return true;
-    } else {
-        emailError.style.display = "block";
-        emailSignup.classList.add("input-error");
-        return false;
-    }
-}
 
 function formValidator(event) {
-    if (!nameValidator() || !emailValidator() || !emailSignUpValidator()) {
+    if (!nameValidator() || !emailValidator()) {
         event.preventDefault();
     }
 }
