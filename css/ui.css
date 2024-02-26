@@ -48,7 +48,7 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  /* position: sticky; This was causing the card to stick to the top of the page */
+  position: sticky;
   /* top: 200px; */
   color: var(--light);
   background: linear-gradient(
@@ -59,7 +59,7 @@
   );
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  }
+}
 
 /* -------------- ABOUT ME------------------ */
 
@@ -77,9 +77,8 @@
   align-items: end;
 }
 
-.sticker{
+.sticker {
   font-size: var(--font-size-h3);
-
 }
 
 /* ------------- FLIP-CARD ------------------- */
@@ -234,26 +233,19 @@ i {
 /* Back To Top Button */
 .back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 50px;
   display: none;
-  width: 100px;
-  height: 50px;
-  font-size: var(--font-size-h3);
   color: var(--light);
-  border: none;
-  border-radius: 10px;
-  /* padding: var(--padding); */
   z-index: 100;
-  background: var(--shades);
-  align-self: center;
+  font-size: var(--font-size-h1);
 }
 
-.back-to-top:hover {
-  transform: 1s ease-in-out;
-  scale: 1.1;
+.back-to-top i:hover {
+  color: var(--shades);
+  cursor: pointer;
+  transform: rotate(360deg);
 }
-
 
 .form-container {
   max-width: 600px;
@@ -311,7 +303,6 @@ textarea:focus {
   color: var(--alert);
 }
 
-
 .form-button {
   font-size: var(--font-size-h3);
   background-color: var(--light);
@@ -327,7 +318,6 @@ textarea:focus {
   transition: all 0.5s ease-in-out;
 }
 
-
 .form-button:hover {
   background: linear-gradient(
     -135deg,
@@ -341,7 +331,6 @@ textarea:focus {
   border: none;
 }
 
-
 .footer-content {
   display: flex;
   justify-content: space-evenly;
@@ -351,8 +340,8 @@ textarea:focus {
 }
 
 .footer-content i {
-font-size: var(--font-size-h1);
-transition: all 1s ease-in-out;
+  font-size: var(--font-size-h1);
+  transition: all 1s ease-in-out;
 }
 
 .footer-content i:hover {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio 1</title>
+    <title>Portfolio | Jon Are</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" href="data:," />
     <script src="/js/index.js" type="module"></script>
@@ -38,7 +38,7 @@
       <!--   <h1 class="uppercase bold text-align-center">about me</h1> -->
     
        
-        <article class="flex justified-center align-items-center about-me">
+        <div class="flex justified-center align-items-center about-me">
           <img
           src="/img/profile.jpg"
           alt="profile picture of me"
@@ -54,7 +54,7 @@
               <p class="margin-top sticker"><span class="italic">Let's create something amazing together!</span>
             </p>
           </div>
-          </article>
+          </div>
       </div>
       <div class="card flex justified-center align-items-center flex-wrap" id="two">
         <div class="flip-card">
@@ -67,9 +67,10 @@
 
           <div class="flip-card__back-side flex">
           <img class="flip-card__back-img" src="/img/pe1.jpg" alt="picture of kil-handball website on mobile">
-          <article class="flip-card-text-container flex-column">
+          <div class="flip-card-text-container flex-column">
             <h2 class="capitalize bold">project exam 1<h2>
             <p>In my exam my goal was to create a website that could work for my local handball team. The users are coaches, parents and athletes related to the club, and the website works as a information channel and exposure of the club.</p>
+      
             <div class="flip-card__back-wrapper">
               <div>
                 <i class="fa-brands fa-github"></i>
@@ -81,10 +82,9 @@
               </div>
              </div>
             <button class="card-button" title="close project exam 1"><i class="fa-solid fa-minus"></i></button>
-        </article>
-          <!-- </div> -->
+            </div>
+          </div>
         </div>
-        
       </div>
       <div class="card flex justified-center align-items-center flex-wrap" id="three">
         <div class="flip-card">
@@ -99,7 +99,7 @@
             class="flip-card__back-side flex"
           >
           <img class="flip-card__back-img" src="/img/sp1.jpg" alt="picture of community science museum website on mobile">
-          <article class="flip-card-text-container flex-column">
+          <div class="flip-card-text-container flex-column">
             <h2 class="capitalize bold">semester project 1</h2>
             <p>In my semester project 1 the users are teachers, studends, parents and child from age 7 - 15 years old.</p>
             <div class="flip-card__back-wrapper">
@@ -112,7 +112,7 @@
              </div>
              </div>
             <button class="card-button" title="close semester project 1"><i class="fa-solid fa-minus"></i></button>
-        </article>
+        </div>
           </div>
         </div>
         
@@ -144,7 +144,7 @@
               </div>
               <button class="card-button" title="close cross-course project"><i class="fa-solid fa-minus"></i></button>
 
-          </article>
+            </div>
 
         </div>
       </div></div>
@@ -193,7 +193,7 @@
       </div>
     </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-content">
         <div>
           <i class="fa-brands fa-github"></i>
@@ -204,6 +204,6 @@
        </div>
        </div>
     </footer>
-    <button id="backToTop" title="back to top">↑ Top</button>
+    <button id="backToTop" title="back to top"><i class="fa-solid fa-circle-arrow-up back-to-top"></i></button>
   </body>
 </html>
