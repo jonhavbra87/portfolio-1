@@ -18,12 +18,81 @@
     --font-size-h3: 1.2rem;
     --padding: 1rem;
   }
+  .header-content {
+    display: block;
+    height: 100px;
+  }
 
-  header {
+  .menu-toggle {
+    display: block;
+    font-size: 3rem;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    background: transparent;
+    border: none;
+    color: var(--light);
+    z-index: 1000;
+  }
+
+  .navigation {
+    display: none;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 998;
+    transition: max-height 0.5s ease-out, opacity 0.1s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .navigation.open {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
+    z-index: 999;
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  nav a.active {
+    border-radius: 0;
+  }
+
+  nav {
+    top: 0;
+    padding: var(--padding);
+    font-weight: 700;
+    font-size: var(--font-size-h1);
+    gap: 2rem;
+  }
+
+  nav a {
+    transition: all 1s ease;
+    color: snow;
+  }
+
+  nav a:hover,
+  nav a:focus {
+    /* color: #009688; */
+    color: var(--shades);
+  }
+
+  nav a.active {
+    background-color: var(--light);
+    color: var(--dark);
+    border-radius: 10px 10px 0 0;
+    font-weight: 600;
+  }
+
+  .fa-bars,
+  .fa-xmark {
+    font-size: var(--font-size-h1);
+    transition: opacity 0.3s ease-out;
+    opacity: 1;
   }
   .about-me {
     flex-wrap: wrap;

@@ -14,16 +14,22 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-wrapper">
+      <div class="header-content">
         <!-- <img src="/img/laptop-logo.jpg" alt="laptop in the grass at night" /> -->
-        <h1 class="uppercase">kongsvinger-it</h1>
+        <div class="header-logo"><h1 class="uppercase">kongsvinger-it</h1></div>
 
-        <nav class="flex">
-          <a href="#one"><h1>about me</h1></a>
-          <a href="#two"><h1>project exam 1</h1></a>
-          <a href="#three"><h1>semester project 1</h1></a>
-          <a href="#four"><h1>cross-course</h1></a>
-          <a href="#five"><h1>contact</h1></a>
+        <nav id="main-nav">
+          <button id="menu-toggle" class="menu-toggle" title="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark" style="display: none"></i>
+          </button>
+          <ul class="navigation flex">
+            <li><a href="#one"><h1>about me</h1></a></li>
+            <li><a href="#two"><h1>project exam 1</h1></a></li>
+            <li><a href="#three"><h1>semester project 1</h1></a></li>
+            <li><a href="#four"><h1>cross-course</h1></li>
+            <li><a href="#five"><h1>contact</h1></a></li>
+          </ul>
         </nav>
       </div>
     </header>

@@ -1,6 +1,6 @@
 /* --------------------------- UI ---------------------------  */
 
-.header-wrapper {
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -8,27 +8,37 @@
   height: 200px;
 }
 
-.header-wrapper img {
-  height: 100%;
+/* .header-logo {
+  align-items: center;
+} */
+
+/* ----------------- Navigation Styling ----------------- */
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav {
-  top: 0;
-  padding: var(--padding);
-  /* width: 100%; */
-  /* justify-content: end; */
-  font-weight: 700;
-  font-size: var(--font-size-h1);
-  gap: 2rem;
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-nav a {
-  transition: all 1s ease;
-  color: snow;
+.navigation a {
+  text-decoration: none;
+  color: var(--light);
+  padding: 10px;
+  display: block;
 }
-nav a:hover,
-nav a:focus {
-  color: #009688;
+
+.navigation a:hover {
+  color: var(--shades);
+}
+
+.menu-toggle {
+  display: none;
 }
 
 .card {
