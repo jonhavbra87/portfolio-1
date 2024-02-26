@@ -5,7 +5,8 @@
   justify-content: space-between;
   align-items: end;
   width: 100%;
-  height: 200px;
+  height: 100%;
+  /* height: 200px; */
 }
 
 /* .header-logo {
@@ -16,14 +17,14 @@
 
 .navigation {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
 }
 
 .navigation ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  /* padding: 0;
+  margin: 0; */
 }
 
 .navigation a {
@@ -43,11 +44,12 @@
 
 .card {
   width: 100vw;
+  /* max-height: 100vh; */
   height: 100vh;
   display: flex;
   justify-content: center;
   /* position: sticky; This was causing the card to stick to the top of the page */
-  top: 0;
+  top: 200px;
   color: var(--light);
   background: linear-gradient(
     65deg,
@@ -57,9 +59,7 @@
   );
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  /* background: var(--midnight); */
-  /* background: url("/img/background3.jpg") no-repeat top right/cover; */
-}
+  }
 
 /* -------------- ABOUT ME------------------ */
 

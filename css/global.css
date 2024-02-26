@@ -36,16 +36,25 @@ body {
   );
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9999999;
+  color: var(--light);
+  height: 200px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; */
+  background: var(--midnight);
+}
+
 /* main {
 } */
 
 .header,
 .footer {
-  color: var(--light);
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ 
 }
 
 p,
