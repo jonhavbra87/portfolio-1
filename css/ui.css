@@ -49,7 +49,7 @@
   display: flex;
   justify-content: center;
   /* position: sticky; This was causing the card to stick to the top of the page */
-  top: 200px;
+  /* top: 200px; */
   color: var(--light);
   background: linear-gradient(
     65deg,
@@ -242,7 +242,7 @@ i {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 100;
 }
 
 #backToTop:hover {
