@@ -93,14 +93,6 @@ p {
 
 /* ----------------- Standard Styling ----------------- */
 
-.grid {
-  display: grid;
-}
-
-.grip-gap {
-  gap: 2rem;
-}
-
 .flex,
 .flex-column,
 .flex-row {
