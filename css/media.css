@@ -18,9 +18,27 @@
     --font-size-h3: 1.2rem;
     --padding: 1rem;
   }
+  body {
+    height: 100svh;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    position: sticky;
+    bottom: 0;
+    background: var(--midnight);
+    color: var(--light);
+    /* padding: 0; */
+    height: 100px;
+    z-index: 999999999999999;
+  }
   .header-content {
     display: block;
-    height: 100px;
+    height: 50px;
   }
 
   .menu-toggle {
@@ -43,7 +61,7 @@
     width: 100%;
     text-align: center;
     z-index: 998;
-    transition: max-height 0.5s ease-out, opacity 0.1s ease-out;
+    /* transition: max-height 0.5s ease-out, opacity 0.1s ease-out; */
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -96,10 +114,17 @@
   .about-me {
     flex-wrap: wrap;
   }
-
+  .sticker {
+    font-size: var(--font-size-h3);
+  }
+  .profile-img {
+    width: 10rem;
+    height: 10rem;
+    display: block;
+  }
   .flip-card {
     position: relative;
-    width: 80%;
+    width: 90%;
     aspect-ratio: 3/2;
     perspective: 3200px;
     margin: 10px;
@@ -108,7 +133,7 @@
 
   .flip-card__front-side {
     transform: rotateY(0deg);
-    border-radius: 70px 70px 10px 10px;
+    border-radius: 50px 50px 10px 10px;
   }
 
   .flip-card__back-side {

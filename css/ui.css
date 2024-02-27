@@ -27,6 +27,7 @@
   margin: 0; */
 }
 
+.home,
 .navigation a {
   text-decoration: none;
   color: var(--light);
@@ -34,6 +35,7 @@
   display: block;
 }
 
+.home,
 .navigation a:hover {
   color: var(--shades);
 }
@@ -78,7 +80,7 @@
 }
 
 .sticker {
-  font-size: var(--font-size-h3);
+  font-size: var(--font-size-h1);
 }
 
 /* ------------- FLIP-CARD ------------------- */
