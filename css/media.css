@@ -18,27 +18,24 @@
     --font-size-h3: 1.2rem;
     --padding: 1rem;
   }
+
   body {
     height: 100svh;
   }
 
+  main {
+    margin-top: 100px;
+  }
+
+  header {
+    height: 100px;
+  }
+  footer {
+    height: 100px;
+  }
   .card {
     display: flex;
     flex-direction: column;
-  }
-
-  .header {
-    position: sticky;
-    bottom: 0;
-    background: var(--midnight);
-    color: var(--light);
-    /* padding: 0; */
-    height: 100px;
-    z-index: 999999999999999;
-  }
-  .header-content {
-    display: block;
-    height: 50px;
   }
 
   .menu-toggle {
@@ -74,6 +71,8 @@
     z-index: 999;
     max-height: 500px;
     opacity: 1;
+    background: var(--midnight);
+    position: fixed;
   }
 
   nav a.active {
@@ -82,7 +81,7 @@
 
   nav {
     top: 0;
-    padding: var(--padding);
+    /* padding: var(--padding); */
     font-weight: 700;
     font-size: var(--font-size-h1);
     gap: 2rem;
@@ -118,13 +117,19 @@
     font-size: var(--font-size-h3);
   }
   .profile-img {
-    width: 10rem;
-    height: 10rem;
     display: block;
+  }
+
+  .h1-background {
+    justify-content: center;
+    align-self: center;
+    width: 80%;
   }
   .flip-card {
     position: relative;
-    width: 90%;
+    max-height: 500px;
+    height: 100%;
+    width: 85%;
     aspect-ratio: 3/2;
     perspective: 3200px;
     margin: 10px;
@@ -133,7 +138,8 @@
 
   .flip-card__front-side {
     transform: rotateY(0deg);
-    border-radius: 50px 50px 10px 10px;
+    border-radius: 20px;
+    box-shadow: white 0px 0px 10px 0px;
   }
 
   .flip-card__back-side {
@@ -148,17 +154,26 @@
   .flip-card.is-flipped .flip-card__back-side {
     transform: rotateY(0deg);
   }
-  .card-img-pe1 {
-    background: url("/img/pe1.jpg");
+  .card-img-pe1,
+  .card-img-sp1,
+  .card-img-ccp {
+    /* background: url("/img/pe1.jpg"); */
+    background: linear-gradient(
+      -135deg,
+      var(--shades),
+      var(--dark),
+      var(--brighter)
+    );
+    /* display: none; */
   }
 
-  .card-img-sp1 {
+  /* .card-img-sp1 {
     background: url("/img/sp1.jpg");
   }
 
   .card-img-ccp {
     background: url("/img/ccp.jpg");
-  }
+  } */
 
   .card-img-pe1,
   .card-img-sp1,

@@ -1,24 +1,47 @@
 export function scrollBehavior() {
   window.addEventListener("scroll", () => {
-    document.querySelectorAll(".card").forEach((card) => {
-      const { top, bottom } = card.getBoundingClientRect();
-      const vh = window.innerHeight;
+    const footer = document.querySelector("footer");
+    const cards = document.querySelectorAll(".card");
+    const lastCard = cards[cards.length - 1]; // Få tak i det siste kortet
 
-      // Beregn prosentvis synlighet av kortet i viewporten
-      let visibleRatio = 0;
-      if (bottom > 0 && top < vh) {
-        // Kortet er delvis synlig
-        const visiblePortion = Math.min(bottom, vh) - Math.max(0, top);
-        const cardHeight = bottom - top;
-        visibleRatio = visiblePortion / cardHeight;
-      }
+    // Beregn avstanden til bunnen av siden
+    const pageHeight = document.documentElement.scrollHeight;
+    const scrollPosition = window.innerHeight + window.scrollY;
 
-      // Juster opasiteten basert på synligheten
-      // Dette vil sørge for at opasiteten endres mer gradert
-      card.style.opacity = Math.max(0, Math.min(1, visibleRatio));
-    });
+    // Sjekk om brukeren har scrollet til bunnen av siden
+    if (scrollPosition >= pageHeight) {
+      // Vis footer når brukeren har scrollet til bunnen
+      footer.style.opacity = "1";
+      footer.style.transform = "translateY(0%)"; // Flytter footeren til sin opprinnelige posisjon
+    } else {
+      // Gjør footeren usynlig igjen når brukeren scroller opp
+      footer.style.opacity = "0";
+      footer.style.transform = "translateY(100%)"; // Skjuler footeren under skjermen
+    }
   });
 }
+
+// export function scrollBehavior() {
+//   window.addEventListener("scroll", () => {
+//     document.querySelectorAll(".card").forEach((card) => {
+//       const { top, bottom } = card.getBoundingClientRect();
+//       const vh = window.innerHeight;
+
+//       // Beregn prosentvis synlighet av kortet i viewporten
+//       let visibleRatio = 0;
+//       if (bottom > 0 && top < vh) {
+//         // Kortet er delvis synlig
+//         const visiblePortion = Math.min(bottom, vh) - Math.max(0, top);
+//         const cardHeight = bottom - top;
+//         visibleRatio = visiblePortion / cardHeight;
+//       }
+
+//       // Juster opasiteten basert på synligheten
+//       // Dette vil sørge for at opasiteten endres mer gradert
+//       card.style.opacity = Math.max(0, Math.min(1, visibleRatio));
+//     });
+//   });
+// }
 
 // export function scrollBehavior() {
 //   window.addEventListener("scroll", () => {

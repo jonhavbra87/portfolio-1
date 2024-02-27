@@ -1,18 +1,38 @@
 /* --------------------------- UI ---------------------------  */
-.footer-content,
-.header-content {
+
+/* ----------------- HEADER / FOOTER----------------- */
+
+.footer-content {
   display: flex;
-  justify-content: space-between;
-  align-items: end;
-  width: 100%;
-  height: 100%;
-  /* height: 200px; */
+  width: 60%;
+  align-items: center;
+  justify-content: space-around;
 }
 
-/* .header-logo {
-  align-items: center;
-} */
+.footer-content i {
+  font-size: var(--font-size-h1);
+  transition: all 1s ease-in-out;
+}
 
+.footer-content i:hover {
+  color: var(--shades);
+  cursor: pointer;
+  transform: rotate(-360deg);
+  scale: 1.3;
+}
+
+.main-nav {
+  /* position: fixed;
+  right: 0; */
+  z-index: 1000;
+}
+
+.header-logo {
+  /* position: fixed;
+  left: 0; */
+  z-index: 999;
+  align-self: end;
+}
 /* ----------------- Navigation Styling ----------------- */
 
 .navigation {
@@ -65,14 +85,24 @@
 
 /* -------------- ABOUT ME------------------ */
 
-.profile-img {
+.profile-img-container {
   width: 20rem;
   height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   border-radius: 50%;
-  object-fit: cover;
-  margin: 0 auto;
-  display: block;
 }
+
+.profile-img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
 .text-container {
   max-width: 50rem;
   padding: 2rem;
@@ -86,7 +116,8 @@
 /* ------------- FLIP-CARD ------------------- */
 .flip-card {
   position: relative;
-  height: 600px;
+  max-width: 1200px;
+  width: 100%;
   aspect-ratio: 2/1;
   perspective: 3200px;
   margin: 10px;
@@ -166,6 +197,8 @@
   border-radius: 10px;
   text-align: center;
   letter-spacing: 2px;
+  width: 100%;
+  margin-bottom: 0;
 }
 .flip-card-text-container {
   padding: 2rem;
@@ -332,22 +365,4 @@ textarea:focus {
   width: 50%;
   transform: 1s ease-in-out;
   border: none;
-}
-
-.footer-content {
-  width: 60%;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.footer-content i {
-  font-size: var(--font-size-h1);
-  transition: all 1s ease-in-out;
-}
-
-.footer-content i:hover {
-  color: var(--shades);
-  cursor: pointer;
-  transform: rotate(-360deg);
-  scale: 1.3;
 }
