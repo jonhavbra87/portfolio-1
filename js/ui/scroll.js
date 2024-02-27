@@ -4,9 +4,8 @@ export function scrollBehavior() {
       const { top, bottom } = card.getBoundingClientRect();
       const vh = window.innerHeight;
 
+      //justering av synlighet av kortene
       if (top < vh && bottom > 0) {
-        // Kortet er delvis i viewporten
-        // Juster opacity basert på hvor mye av kortet som er synlig
         card.style.opacity = 1 - Math.abs(top) / vh;
       }
     });

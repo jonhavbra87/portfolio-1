@@ -1,5 +1,5 @@
 /* --------------------------- UI ---------------------------  */
-
+.footer-content,
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -190,7 +190,7 @@
 
 .flip-card-text-container a:hover {
   /* color: rgb(255, 192, 236); */
-  color: #6359b5;
+  color: var(--shades);
 }
 
 i {
@@ -209,7 +209,7 @@ i {
   height: 30px;
   border-radius: 50%;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   background-color: var(--light);
   text-align: center;
   transition: all 0.5s;
@@ -333,11 +333,9 @@ textarea:focus {
 }
 
 .footer-content {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   width: 60%;
-  height: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer-content i {

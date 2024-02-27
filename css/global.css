@@ -49,8 +49,8 @@ body {
   align-items: center;
 }
 
-
-.footer {
+footer {
+  position: static;
   height: 300px;
 }
 
