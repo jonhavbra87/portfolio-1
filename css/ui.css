@@ -114,7 +114,7 @@
   position: relative;
   max-width: 1200px;
   width: 100%;
-  aspect-ratio: 2/1;
+  aspect-ratio: 8/5;
   perspective: 3200px;
   margin: 10px;
   object-fit: cover;
