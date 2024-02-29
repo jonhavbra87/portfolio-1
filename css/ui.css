@@ -23,29 +23,26 @@
 }
 
 .main-nav {
-  /* position: fixed;
-  right: 0; */
-  z-index: 1000;
+  z-index: 999;
 }
 
 .header-logo {
-  /* position: fixed;
-  left: 0; */
   z-index: 999;
-  align-self: end;
+}
+
+.header-logo img {
+  height: 100px;
+  width: auto;
+  border-radius: 20px;
 }
 /* ----------------- Navigation Styling ----------------- */
 
 .navigation {
   list-style: none;
-  /* padding: 0;
-  margin: 0; */
 }
 
 .navigation ul {
   list-style: none;
-  /* padding: 0;
-  margin: 0; */
 }
 
 .home,
@@ -65,13 +62,11 @@
   display: none;
 }
 
-.card {
+.page {
   width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  /* position: sticky; */
-  /* top: 200px; */
   color: var(--light);
   background: linear-gradient(
     65deg,
@@ -79,7 +74,7 @@
     var(--dark),
     var(--brighter)
   );
-  /* opacity: 0.9; */
+  opacity: 0.9;
   transition: opacity 0.5s ease-in-out;
   overflow: hidden;
 }
@@ -122,6 +117,7 @@
   aspect-ratio: 2/1;
   perspective: 3200px;
   margin: 10px;
+  object-fit: cover;
 }
 
 .flip-card__front-side,

@@ -3,8 +3,7 @@ export function backToTopButton() {
     const backToTopButton = document.getElementById("backToTop");
 
     window.onscroll = function () {
-      // Sjekker om skjermen er større enn 1024 piksler i bredde
-      if (window.innerWidth > 800) {
+      if (window.innerWidth > 600) {
         if (window.pageYOffset > 300) {
           backToTopButton.style.display = "block";
           backToTopButton.classList.add("back-to-top");
@@ -12,7 +11,6 @@ export function backToTopButton() {
           backToTopButton.style.display = "none";
         }
       } else {
-        // Skjuler knappen på mindre skjermer uavhengig av scroll-posisjon
         backToTopButton.style.display = "none";
       }
     };
