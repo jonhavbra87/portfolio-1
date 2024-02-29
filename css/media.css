@@ -190,4 +190,12 @@
     width: 100%;
     justify-content: center;
   }
+
+  .form-container {
+    margin-bottom: 50px !important;
+  }
+
+  .form-button {
+    width: 70%;
+  }
 }
