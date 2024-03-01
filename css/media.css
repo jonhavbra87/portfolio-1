@@ -29,6 +29,7 @@
 
   header {
     height: 100px;
+    justify-content: space-between;
   }
   footer {
     height: 100px;
@@ -47,7 +48,9 @@
 
   .header-logo img {
     height: 80px;
+    margin-left: 20px;
   }
+
   .menu-toggle {
     display: block;
     font-size: 3rem;
