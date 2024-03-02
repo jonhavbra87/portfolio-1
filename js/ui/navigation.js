@@ -5,6 +5,15 @@ export function initializeNavigation() {
     let navigation = document.querySelector('.navigation');
     let barsIcon = menuToggle.querySelector('.fa-bars');
     let xmarkIcon = menuToggle.querySelector('.fa-xmark');
+    let menuItems = navigation.querySelectorAll('a'); 
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            if (navigation.classList.contains('open')) {
+                toggleNavigation();
+            }
+        });
+    });
 
     menuToggle.addEventListener('click', function() {
         toggleNavigation();
@@ -20,7 +29,6 @@ export function initializeNavigation() {
         navigation.classList.toggle('open');
         barsIcon.style.display = barsIcon.style.display === "none" ? "" : "none";
         xmarkIcon.style.display = xmarkIcon.style.display === 'none' ? '' : 'none';
-        console.log("Toggle event triggered");
     }
     
 }
