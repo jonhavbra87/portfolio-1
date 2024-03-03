@@ -23,11 +23,13 @@ function emailValidator() {
     }
 }
 
-
 function formValidator(event) {
-    if (!nameValidator() || !emailValidator()) {
-        event.preventDefault();
-        console.log(event);
+    event.preventDefault(); 
+    if (nameValidator() && emailValidator()) {
+        alert("Thank you for your message. We will be in touch.");
+        event.target.reset();
+    } else {
+        console.log("Validation failed.");
     }
 }
 

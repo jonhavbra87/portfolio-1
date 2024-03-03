@@ -86,7 +86,8 @@ h3 {
 }
 
 a,
-p {
+p,
+small {
   font-size: var(--font-size-p);
 }
 
@@ -169,21 +170,6 @@ p {
   font-weight: bold;
 }
 
-.small {
-  font-size: 1rem;
-}
 .italic {
   font-style: italic;
-}
-
-.font-weight-600 {
-  font-weight: 600;
-}
-
-.font-weight-700 {
-  font-weight: 700;
-}
-
-.font-weight-800 {
-  font-weight: 800;
 }

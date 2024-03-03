@@ -205,7 +205,6 @@
 }
 .flip-card-text-container {
   padding: 2rem;
-  /* background: rgba(94, 54, 180, 0.6); */
   justify-content: end;
   align-items: start;
   height: 100%;
@@ -227,7 +226,6 @@
 }
 
 .flip-card-text-container a:hover {
-  /* color: rgb(255, 192, 236); */
   color: var(--shades);
 }
 
@@ -264,7 +262,6 @@ i {
 }
 
 .card-button:active i {
-  /* color: var(--light); */
   color: var(--shades);
 }
 
@@ -286,6 +283,7 @@ i {
   transform: rotate(-360deg);
 }
 
+/* ----------------- CONTACT-FORM ----------------- */
 .form-container {
   max-width: 600px;
   width: 100%;

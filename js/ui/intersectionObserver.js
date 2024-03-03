@@ -1,4 +1,4 @@
-function navigationObserver() {
+export function navigationObserver() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         document.querySelectorAll('nav a').forEach(link => {
@@ -18,5 +18,3 @@ function navigationObserver() {
     });
     
   }
-
-export { navigationObserver };
