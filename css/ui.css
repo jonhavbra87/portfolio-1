@@ -4,10 +4,11 @@
 
 .footer-content {
   display: flex;
-  width: 40%;
+  width: 100%;
   align-items: center;
   justify-content: space-evenly;
   margin: 0 auto;
+  gap: 2rem;
 }
 
 .footer-content i {
@@ -38,12 +39,14 @@
 /* ----------------- Navigation Styling ----------------- */
 
 .navigation,
-.navigation ul {
+.navigation ul,
+.navigation li {
   list-style: none;
+  font-weight: 800;
 }
 
 .navigation a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: var(--light);
   padding: 10px;
   display: block;
@@ -55,10 +58,11 @@
   color: var(--shades);
 }
 
-/* .navigation a.active {
-  text-decoration: underline;
+.navigation a.active {
+  text-decoration: line-through;
   color: var(--shades);
-} */
+  font-weight: 600 !important;
+}
 
 .menu-toggle {
   display: none;
@@ -142,7 +146,7 @@
 .flip-card__back-side {
   transform: rotateX(-180deg);
   justify-content: space-evenly;
-  background: var(--brighter);
+  background: var(--dark);
 }
 .flip-card.is-flipped .flip-card__front-side {
   transform: rotateX(180deg);
@@ -261,7 +265,7 @@ i {
 
 .card-button:active i {
   /* color: var(--light); */
-  color: #6359b5;
+  color: var(--shades);
 }
 
 /* Back To Top Button */
@@ -271,7 +275,7 @@ i {
   right: 50px;
   display: none;
   color: var(--light);
-  z-index: 100;
+  z-index: 1000;
   font-size: 1.8em;
   transition: all 1s ease-in-out;
 }
