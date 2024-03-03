@@ -24,7 +24,7 @@
           <i class="fa-solid fa-bars"></i>
           <i class="fa-solid fa-xmark" style="display: none"></i>
         </button>
-        <ul class="navigation flex">
+        <ul class="navigation flex small-caps">
           <li>
             <a href="#one"><h1>about</h1></a>
           </li>
@@ -244,8 +244,64 @@
         class="page flex-column justified-center align-items-center"
         id="five"
       >
-        <h1 class="uppercase bold">contact me</h1>
+        <h1 class="uppercase bold margin-top">contact me</h1>
         <div class="form-container">
+          <form
+            method="POST"
+            action="https://www.domeneshop.no/cgi-bin/mailto.cgi"
+            accept-charset="UTF-8"
+          >
+            <input type="hidden" name="_to" value="mail@kongsvinger-it.no" />
+            <input
+              type="hidden"
+              name="_from"
+              value="feedback@kongsvinger-it.no"
+            />
+            <input
+              type="hidden"
+              name="_subject"
+              value="Kontaktskjema_tilbakemelding"
+            />
+            <input
+              type="hidden"
+              name="_resulturl"
+              value="https://www.domeneshop.no/eksempler/kvittering.html"
+            />
+
+            <div>
+              <label>Name (required)<input name="name" id="name" /></label>
+              <div class="form-error" id="NameError">
+                <i class="fa-solid fa-triangle-exclamation"></i> Minimum 2
+                characters
+              </div>
+            </div>
+            <div>
+              <label>Email (required) <input name="email" id="email" /></label>
+              <div class="form-error" id="emailError">
+                <i class="fa-solid fa-triangle-exclamation"></i> Please enter a
+                valid email address
+              </div>
+            </div>
+            <div>
+              <label
+                >Message<textarea
+                  placeholder="Please write your message here"
+                  name="story"
+                  id="story"
+                  rows="5"
+                  cols="25"
+                ></textarea>
+              </label>
+            </div>
+            <input
+              type="submit"
+              class="form-button"
+              value="Submit"
+              title="send in form"
+            />
+          </form>
+        </div>
+        <!-- <div class="form-container">
           <form
             method="GET"
             action="/contactSuccess/index.html"
@@ -255,9 +311,9 @@
             <div>
               <label>
                 Name (required)
-                <input name="Name" id="Name" />
+                <input name="name" id="name" />
               </label>
-              <div class="form-error" id="NameError">
+              <div class="form-error" id="nameError">
                 <i class="fa-solid fa-triangle-exclamation"></i> Minimum 2
                 characters
               </div>
@@ -290,7 +346,7 @@
               title="send in form"
             />
           </form>
-        </div>
+        </div> -->
       </div>
     </main>
     <footer class="footer">

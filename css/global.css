@@ -161,10 +161,24 @@ p {
 .capitalize {
   text-transform: capitalize;
 }
-
+.small-caps {
+  font-variant: small-caps;
+}
 .bold {
   font-weight: bold;
 }
 .italic {
   font-style: italic;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
 }

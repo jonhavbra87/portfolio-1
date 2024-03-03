@@ -1,5 +1,5 @@
-const name = document.querySelector("#Name");
-const nameError = document.querySelector("#NameError");
+const name = document.querySelector("#name");
+const nameError = document.querySelector("#nameError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 
@@ -27,6 +27,7 @@ function emailValidator() {
 function formValidator(event) {
     if (!nameValidator() || !emailValidator()) {
         event.preventDefault();
+        console.log(event);
     }
 }
 
@@ -49,5 +50,6 @@ export function setupFormValidator() {
   const form = document.querySelector("#contactForm");
   if (form) {
       form.addEventListener("submit", formValidator);
+      console.log(form)
   }
 }
