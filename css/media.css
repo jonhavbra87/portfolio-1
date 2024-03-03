@@ -146,20 +146,12 @@
   .card-img-pe1,
   .card-img-sp1,
   .card-img-ccp {
-    background: linear-gradient(
+    /* background: linear-gradient(
       -135deg,
       var(--shades),
       var(--dark),
       var(--brighter)
-    );
-  }
-
-  .card-img-pe1,
-  .card-img-sp1,
-  .card-img-ccp {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: top;
+    ); */
   }
 
   .flip-card__back-img {

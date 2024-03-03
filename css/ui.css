@@ -146,7 +146,7 @@
 .flip-card__back-side {
   transform: rotateX(-180deg);
   justify-content: space-evenly;
-  background: var(--dark);
+  background: var(--midnight);
 }
 .flip-card.is-flipped .flip-card__front-side {
   transform: rotateX(180deg);
@@ -187,11 +187,16 @@
 .cross-course {
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
 }
 
 .flip-card__back-img {
   position: relative;
   bottom: -150px;
+  border-radius: 55px 55px 0;
 }
 
 .h1-background {
