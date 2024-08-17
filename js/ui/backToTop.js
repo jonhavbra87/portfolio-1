@@ -5,10 +5,9 @@ export function backToTopButton() {
     window.onscroll = function () {
       if (window.innerWidth > 600) {
         if (window.pageYOffset > 300) {
-          backToTopButton.style.display = "block";
-          backToTopButton.classList.add("back-to-top");
+          backToTopButton.classList.add("show");
         } else {
-          backToTopButton.style.display = "none";
+          backToTopButton.classList.remove("show");
         }
       } else {
         backToTopButton.style.display = "none";

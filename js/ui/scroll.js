@@ -1,30 +1,31 @@
+// Updated scrollBehavior function
 export function scrollBehavior() {
   const footer = document.querySelector("footer");
+  const targetSection = document.getElementById("six"); // Target the last section directly
+
   const options = {
-    root: null, // observerer endringer i forhold til viewporten
+    root: null, // Observe changes relative to the viewport
     rootMargin: '0px',
-    threshold: 0 // utløser når 0% (dvs. så snart) av målelementets synlighet krysser rootMargin
+    threshold: 0.5 // Trigger when 50% of the target element is visible
   };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Når footer kommer inn i viewporten
+        // When the target section enters the viewport
         footer.style.opacity = "1";
         footer.style.transform = "translateY(0%)";
       } else {
-        // Når footer går ut av viewporten
+        // When the target section leaves the viewport
         footer.style.opacity = "0";
         footer.style.transform = "translateY(100%)";
       }
     });
   }, options);
 
-  // Observerer det siste kortet i stedet for hele siden
-  const page = document.querySelectorAll(".page");
-  const lastPage = page[page.length - 1];
-  observer.observe(lastPage); // Starter observasjonen av det siste kortet
+  observer.observe(targetSection); // Start observing the last section
 }
+
 
 
 // export function scrollBehavior() {

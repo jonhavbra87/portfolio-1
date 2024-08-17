@@ -313,37 +313,34 @@ i {
   color: var(--light);
 }
 
-/* Back To Top Button */
-.back-to-top {
+/* Nullstill knappstiler helt */
+#backToTop {
+  all: unset;
   position: fixed;
   bottom: 30px;
   right: 50px;
-  display: none;
+  font-size: 1.8em;
   color: var(--light);
   z-index: 1000;
-  font-size: 1.8em;
   transition: all 1s ease-in-out;
-}
-
-.back-to-top,
-.back-to-top i {
-  margin: 0;
-  padding: 0;
-}
-
-.back-to-top i:hover {
-  color: var(--shades);
   cursor: pointer;
+  display: none;
+}
+
+#backToTop.show {
+  display: block;
+}
+
+#backToTop i {
+  font-size: inherit;
+  color: var(--light);
+  transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#backToTop i:hover {
+  color: var(--shades);
   transform: rotate(-360deg);
 }
-
-/* Skjuler eventuelle pseudo-elementer */
-/* .back-to-top::before,
-.back-to-top::after,
-.back-to-top i::before,
-.back-to-top i::after {
-  content: none;
-} */
 
 /* ----------------- CONTACT-FORM ----------------- */
 .form-container {
