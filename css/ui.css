@@ -118,7 +118,7 @@
 /* ------------- FLIP-CARD ------------------- */
 .flip-card {
   position: relative;
-  max-width: 1200px;
+  max-width: 800px;
   width: 100%;
   aspect-ratio: 8/5;
   perspective: 3200px;
